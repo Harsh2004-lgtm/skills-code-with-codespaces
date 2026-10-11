@@ -1,4 +1,5 @@
-git add '.devcontainer/devcontainer.json'
-git add '.devcontainer/postCreate.sh'
-git commit -m 'feat: Add features, extensions, and postCreate script'
-git push
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install -y sl
+echo "export PATH=\$PATH:/usr/games" >> ~/.bashrc
+echo "export PATH=\$PATH:/usr/games" >> ~/.zshrc
